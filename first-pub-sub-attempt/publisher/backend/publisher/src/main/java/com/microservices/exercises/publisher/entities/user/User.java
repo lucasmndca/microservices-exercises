@@ -19,7 +19,7 @@ public class User {
 
     @Basic
     @Column(nullable = false)
-    private String name;
+    private String nome;
 
     @Basic
     @Column(nullable = false)
@@ -52,12 +52,12 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getEmail() {
