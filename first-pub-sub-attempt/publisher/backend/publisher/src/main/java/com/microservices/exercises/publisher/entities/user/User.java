@@ -19,7 +19,7 @@ public class User {
 
     @Basic
     @Column(nullable = false)
-    private String nome;
+    private String name;
 
     @Basic
     @Column(nullable = false)
@@ -31,7 +31,7 @@ public class User {
 
     @Basic
     @Column(nullable = false)
-    private Role role;
+    private Long role;
 
     @Column
     private String city;
@@ -42,6 +42,8 @@ public class User {
     @Column(length = 128)
     private String bios;
 
+    protected User() {}
+
     public Long getId() {
         return id;
     }
@@ -50,12 +52,12 @@ public class User {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmail() {
@@ -74,12 +76,12 @@ public class User {
         this.password = password;
     }
 
-    public Role getRole() {
+    public Long getRole() {
         return role;
     }
 
     public void setRole(Role role) {
-        this.role = role;
+        this.role = role.getId();
     }
 
     public String getCity() {

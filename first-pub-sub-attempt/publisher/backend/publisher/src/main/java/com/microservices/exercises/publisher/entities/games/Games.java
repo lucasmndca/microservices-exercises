@@ -9,6 +9,7 @@ import java.util.Date;
  * @since 2021-05-05 20:56
  */
 @Entity
+@Table(name = "games")
 public class Games {
 
     @Id
@@ -36,6 +37,8 @@ public class Games {
 
     @Column
     private Date releaseDate;
+
+    protected Games() {}
 
     public Long getId() {
         return id;
