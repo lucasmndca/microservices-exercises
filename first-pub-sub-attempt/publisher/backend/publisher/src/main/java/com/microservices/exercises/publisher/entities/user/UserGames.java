@@ -8,6 +8,7 @@ import javax.persistence.*;
  * @since 2021-05-05 21:13
  */
 @Entity
+@Table(name = "users_v_games")
 public class UserGames {
 
     @Id
@@ -21,6 +22,8 @@ public class UserGames {
     @Basic
     @Column(nullable = false)
     private Long gameId;
+
+    protected UserGames() {}
 
     public Long getId() {
         return id;

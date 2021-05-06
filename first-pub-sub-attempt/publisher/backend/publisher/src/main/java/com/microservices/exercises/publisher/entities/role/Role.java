@@ -8,6 +8,7 @@ import javax.persistence.*;
  * @since 2021-05-05 20:48
  */
 @Entity
+@Table(name = "role")
 public class Role {
 
     @Id
@@ -17,4 +18,22 @@ public class Role {
     @Basic
     @Column(nullable = false)
     private String type;
+
+    protected Role() {}
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 }
