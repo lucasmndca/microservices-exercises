@@ -9,7 +9,8 @@ import java.util.List;
 /**
  * The user repository
  * @author Lucas Dias
- * @since 2021-05-05 09:25
+ * @since 2021-05-06 09:25
+ * @version 0.0.1
  */
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {
@@ -23,6 +24,5 @@ public interface UserRepository extends CrudRepository<User, Long> {
     User save(User user);
 
     void delete(User user);
-
 
 }
