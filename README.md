@@ -14,3 +14,6 @@ Branch naming convention: https://codingsight.com/git-branching-naming-conventio
   - **/publisher** - _A simple system which publishes messages on the queue_
   - **/subscriber** - _Three microservices which consume messages from the queue_
   - **/database** - _The datasource for all these microservices_
+- **/zeromq** - _A folder that contains zeromq exercises_
+  - **/patterns** - _Simple exercises around patterns implementation_
+    - **/push-pull** - _Covers the "Push-Pull" pattern_

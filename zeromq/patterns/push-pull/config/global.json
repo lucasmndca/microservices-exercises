@@ -1,0 +1,8 @@
+{
+    "host": {
+        "primary": "127.0.0.1",
+        "secondary": "172.0.2.1"
+    },
+    "method": "tcp",
+    "port": "7000"
+}
