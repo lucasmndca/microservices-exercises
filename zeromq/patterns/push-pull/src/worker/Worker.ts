@@ -1,13 +1,13 @@
-const HostBuilder = require("../util/HostBuilder");
+import { HostBuilder } from "../util/HostBuilder";
+import { Pull } from "zeromq";
 
-const zmq = require("zeromq");
-const socket = new zmq.Pull();
-const host = new HostBuilder();
+const socket: Pull = new Pull();
+const host: HostBuilder = new HostBuilder();
 
 // Starts a new worker
 run();
 
-async function run() {
+async function run(): Promise<void> {
 
     await socket.connect(host.getPrimaryHost());
     console.log("Connected to the server.");
